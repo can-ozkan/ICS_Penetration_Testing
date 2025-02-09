@@ -9,3 +9,9 @@ export PATH="$PATH:/home/can/.local/bin" \
 source ~/.bashrc \
 sudo pip3 install python-snap7 \
 sudo ufw disable
+
+## Attack Scripts for Kali Linux
+https://github.com/meeas/plcscan \
+https://github.com/tijldeneut/ICSSecurityScripts \
+https://sourceforge.net/projects/modbuspal/files/modbuspal/RC%20version%201.6b/ \
+https://github.com/digitalbond/Redpoint
