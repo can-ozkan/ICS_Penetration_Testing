@@ -16,3 +16,5 @@ sudo python3 \
   s7.create() \
   s7.start() \
   s7.get_status()
+
+  python2 plcscan.py 192.168.168.11
