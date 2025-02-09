@@ -29,5 +29,5 @@ https://github.com/sourceperl/mbtget
 netdiscover \
 nmap \
 snmp-check \
-metasploit (msfconsole)
+metasploit (msfconsole) \
 searchsploit
