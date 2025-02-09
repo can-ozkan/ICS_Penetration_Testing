@@ -9,10 +9,10 @@ sudo nmap <IP_address> -Pn -p- \
 snmp-check --port 16100 <IP_Address>
 
 
-## S7 PLC Simulatio 2
+## S7 PLC Simulation 2
 sudo python3 \
-  import snap7
-  s7 = snap7.server.Server()
-  s7.create()
-  s7.start()
+  import snap7 \
+  s7 = snap7.server.Server() \
+  s7.create() \
+  s7.start() \
   s7.get_status()
