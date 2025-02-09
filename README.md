@@ -14,4 +14,13 @@ sudo ufw disable
 https://github.com/meeas/plcscan \
 https://github.com/tijldeneut/ICSSecurityScripts \
 https://sourceforge.net/projects/modbuspal/files/modbuspal/RC%20version%201.6b/ \
-https://github.com/digitalbond/Redpoint
+https://github.com/digitalbond/Redpoint \
+sudo gem install modbus-cli \
+modbus --help \
+https://github.com/sourceperl/mbtget 
+
+## Common Pentest Tools
+netdiscover \
+nmap \
+snmp-check \
+metasploit (msfconsole)
