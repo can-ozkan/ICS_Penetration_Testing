@@ -30,3 +30,4 @@ netdiscover \
 nmap \
 snmp-check \
 metasploit (msfconsole)
+searchsploit
