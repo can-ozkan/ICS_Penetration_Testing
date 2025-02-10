@@ -17,5 +17,10 @@ sudo python3 \
   s7.start() \
   s7.get_status()
 
-  python2 plcscan.py 192.168.168.11
+  python2 plcscan.py 192.168.168.11 \
   sudo nmap 192.168.168.11 -Pn -p 102 --script ~/ICS_attack_scripts/Redpoint/s7-enumerate
+
+  ## Gas Station Controller Simulation
+  Change the first half part of the MAC address to 00A0F6 \
+  conpot -f --template guardian_ast
+  
