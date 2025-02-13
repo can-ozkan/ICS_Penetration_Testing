@@ -54,6 +54,7 @@ nano .local/lib/python3.10/site-packages/conpot/templates/IEC104/snmp/snmp.xml \
 Change the snmp port from 161 into 16100 \
 conpot -f --template IEC104 \
 sudo nmap 192.168.168.12 -p 2404 --script ~/ICS_attack_scripts/Redpoint/iec-identify.nse \
+/usr/share/nmap/scripts/iec-identify.nse \
 metasploit -> search iec104 \
 use auxiliary/client/iec104/iec104 \
 set ASDU_ADDRESS <learn_from_nmap_nse> \
