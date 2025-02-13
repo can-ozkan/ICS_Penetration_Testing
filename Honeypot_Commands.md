@@ -18,9 +18,10 @@ s7.start() \
 s7.get_status()
 
 python2 plcscan.py 192.168.168.11 \
-sudo nmap 192.168.168.11 -Pn -p 102 --script ~/ICS_attack_scripts/Redpoint/s7-enumerate
+sudo nmap 192.168.168.11 -Pn -p 102 --script ~/ICS_attack_scripts/Redpoint/s7-enumerate \
+/usr/share/nmap/scripts/s7-info.nse
 
-msfconsole -> search Siemens
+msfconsole -> search Siemens \
 searchsploit 
 
 ## Gas Station Controller Simulation
